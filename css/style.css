@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+
+}
+
+div {
+  transition: all linear 0.5s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.ng-hide {
+  background-color: transparent;
+  top:0;
+  left: -200px;
+}
+
+
+
+car-listing.ng-enter,
+car-listing.ng-leave,
+car-listing.ng-move{
+    -webkit-transition: 1s linear all;
+  -moz-transition: 1s linear all;
+  -o-transition: 1s linear all;
+  transition: 1s linear all;
+}
+
+.car-listing.ng-enter,
+.car-listing.ng-move{
+  opacity:0;
+  height:0;
+  overflow: hidden;
+}
+
+.car-listing.ng-move.ng-move-active,
+.car-listing.ng-enter.ng-enter-active{
+  opacity:1;
+  height: 120px;
+}
+
+.car-listing.ng-leave{
+  opacity: 1;
+  overflow: hidden;
+}
+
+.car-listing.ng-leave.ng-leave-active{
+  opacity:0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+.headerTitle {
+	text-indent: 50px;
+}
+
+
+
+.container{
+	background-color: white;
+
+}
+
+.carImage{
+text-align: center;
+}
+
+
+.imagePic {
+background-color: white;
+width:800px;
+height:400px;
+display: inline-block;
+border:1px solid #ddd;
+transition:1s;
+-webkit-transition:1s;
+}
+
+
+@media screen and (max-width: 780px){
+  .imagePic{
+    width:400px;
+height:200px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .imagePic{
+    width:200px;
+height:100px;
+  }
+}
+
+.imagePic:hover {
+box-shadow: 0 0 3px 2px lightblue;
+}
+
+#imagePic2 {
+
+  width:200px;
+  height:100px;
+}
+
+
+
+
+
+#saveClickResult{
+	color: red
+}
+#selectCar1 {
+	text-align: center;
+}
+
+.labelClass{
+	width:100px;
+}
+
+.jumbotron{
+	background: url("../images/bg.jpg") no-repeat right bottom;
+  background-size:cover;
+    color:#fff;
+    height:400px;
+    overflow:none;
+}
+
+#footnote{
+
+  text-align: center;
+  color:white;
+  margin: 20px 0;
+
+}
+#footnote a, #footnote a:hover, #footnote a:link, #footnote a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+
+#googleMap {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+
+}
