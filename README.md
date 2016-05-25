@@ -1,2 +1,2 @@
 # project3
-3rd project
+This is a simple web app to showcase car dealer catalog using AngularJS
